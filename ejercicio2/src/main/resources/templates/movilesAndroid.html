@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table>
+    <tbody>
+    <h1>Móviles</h1>
+    <tr th:each="movil: ${movilesAndroid}">
+        <td th:text="${movil.id}"></td>
+        <td th:text="${movil.modelo}"></td>
+        <td th:text="${movil.precio}"></td>
+        <td th:text="${movil.so}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
